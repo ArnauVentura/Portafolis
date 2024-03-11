@@ -6,14 +6,14 @@
 
 //     setInterval(() => {
 //         slider.style.transition = 'transform 0.5s ease';
-//         slider.style.transform = `translateX(${-slideWidth * counter}px)`;
+//         slider.style.transform = `translateX(${-slideWidth * counter}px) rotate(0deg)`; // Adjust rotation to 0 degrees
 
 //         counter++;
 
 //         if (counter === slides.length) {
 //             setTimeout(() => {
 //                 slider.style.transition = 'none';
-//                 slider.style.transform = `translateX(0)`;
+//                 slider.style.transform = `translateX(0) rotate(0deg)`; // Adjust rotation to 0 degrees
 //             }, 500);
 //             counter = 1;
 //         }
