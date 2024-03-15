@@ -7,9 +7,13 @@
 
 body{
     min-height: 100vh;
+<<<<<<< Updated upstream
     /* background: url('/Source/Ciberpunk_bgtest.jpg') no-repeat; */
     background: linear-gradient(180.2deg, rgb(120, 85, 137) -6.9%, rgb(35, 9, 31) 76.7%);
     filter: blur(1.5);
+=======
+    background: url('Source/Ciberpunk_bgtest.jpg') no-repeat;
+>>>>>>> Stashed changes
     background-size: cover;
     background-position: center;
     z-index: 0;
@@ -30,7 +34,11 @@ body{
 
 .logo{
     font-size: 32px;
+<<<<<<< Updated upstream
     color: #FFB5DA;
+=======
+    color: #ffffff;
+>>>>>>> Stashed changes
     text-decoration: none;
     font-weight: 700;
 }
@@ -38,8 +46,13 @@ body{
 .navbar a{
     position: relative;
     font-size: 18px;
+<<<<<<< Updated upstream
     color: #FDBF60;
     font-weight: 550;
+=======
+    color: #ffffff;
+    font-weight: 500;
+>>>>>>> Stashed changes
     text-decoration: none;
     margin: 40px;
 }
@@ -51,7 +64,12 @@ body{
     left: 0;
     width: 0;
     height: 2px;
+<<<<<<< Updated upstream
     background: #FDBF60;
+=======
+    background: 
+    #ffffff;
+>>>>>>> Stashed changes
     transition: .3s;
 }
 
@@ -130,9 +148,14 @@ body{
     font-weight: 600;
     transition: .3s;
 }
+
 .btn:hover{
     background: transparent;
+<<<<<<< Updated upstream
     color: #59D5E0;
+=======
+    color: blue;
+>>>>>>> Stashed changes
     transition: .3s;
 }
 
