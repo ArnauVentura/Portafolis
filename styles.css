@@ -18,11 +18,34 @@ body{
 /* // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 400 to 900 */
 
-.vollkorn-long{
+.text{
   font-family: "Vollkorn", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+.title {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 700 */
+
+.Secondary {
+  font-family: "M PLUS Code Latin", monospace;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
 .header{
@@ -130,8 +153,8 @@ body{
 .btn{
     display: inline-block;
     padding: 10px 28px;
-    background: #F4538A;
-    border:2px solid #F4538A;
+    background: #b37393;
+    border:2px solid #b37393;
     border-radius: 6px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     font-size: 20px;
@@ -152,13 +175,26 @@ body{
     position: relative;
     display: inline-flex;
 }
-#mobil{
+/* #mobil{
     position: inherit;
     width: 250px;
     margin: 20px;
+} */
+#mobil {
+    margin: 20px;
+    padding: 55px 2%;
+    border-radius: 30px;
+    border: .5px solid #000000;
+    background-color: #312a2a;
+    width: 40%;
+    float: left;
+    box-shadow: inset 0px 0px 0px -4px rgba(255, 255, 255, 0.1), 1px 1px 6px rgba(0, 0, 0, 0.05), 1px 1px 8px rgba(0, 0, 0, 0.07);
 }
 #video{
     position: inherit;
+    border-radius: 30px;
+    border: .5px solid black;
+    width: 20%;
     width: 300px;
     height: 300px;
     margin: 20px;
