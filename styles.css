@@ -265,3 +265,10 @@ body{
     border-radius: 5px;
     margin-top: 20px;
 }
+
+.code-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+  }
