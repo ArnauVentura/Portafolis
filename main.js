@@ -1,21 +1,41 @@
-// document.addEventListener('DOMContentLoaded', function () {
-//     const slider = document.querySelector('.slider');
-//     const slides = document.querySelectorAll('.slider img');
-//     const slideWidth = slides[0].clientWidth;
-//     let counter = 1;
+document.addEventListener('DOMContentLoaded', (event) => {
+    var popup = document.getElementById('popup');
+    var btn = document.getElementById('projectsBtn');
+    var closeBtn = document.getElementById('closePopup');
+  
+    btn.onclick = function() {
+      popup.style.display = 'block';
+    }
+  
+    closeBtn.onclick = function() {
+      popup.style.display = 'none';
+    }
+  
+    window.onclick = function(event) {
+      if (event.target == popup) {
+        popup.style.display = 'none';
+      }
+    }
+  });
+  
+document.getElementById('lenguajes').addEventListener('change', function() {
+    const selectedLanguage = this.value;
+    const codeImage = document.getElementById('codeImage');
 
-//     setInterval(() => {
-//         slider.style.transition = 'transform 0.5s ease';
-//         slider.style.transform = `translateX(${-slideWidth * counter}px) rotate(0deg)`; // Adjust rotation to 0 degrees
-
-//         counter++;
-
-//         if (counter === slides.length) {
-//             setTimeout(() => {
-//                 slider.style.transition = 'none';
-//                 slider.style.transform = `translateX(0) rotate(0deg)`; // Adjust rotation to 0 degrees
-//             }, 500);
-//             counter = 1;
-//         }
-//     }, 3000); // Change slide every 3 seconds
-// });
+    switch (selectedLanguage) {
+        case 'php':
+            codeImage.src = 'images/php.png';
+            break;
+        case 'html':
+            codeImage.src = 'images/html.png';
+            break;
+        case 'css':
+            codeImage.src = 'images/css.png';
+            break;
+        case 'js':
+            codeImage.src = 'images/js.png';
+            break;
+        default:
+            codeImage.src = 'images/php.png';
+    }
+});

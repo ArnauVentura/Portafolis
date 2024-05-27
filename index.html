@@ -42,14 +42,32 @@
     <section class="home">
       <div class="home-content">
         <h1 class="title">Arnau Ventura Cívico</h1>
-        <h3 class="Secondary">About me</h3>
+        <h3 class="Secondary">Quien soy:</h3>
         <p class="text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae libero
           aut corrupti aliquid eius voluptatum ut? Sint, velit aperiam dolor
           blanditiis rerum expedita. Voluptatum voluptates rem ex iste.
           Suscipit, soluta.
         </p>
-        <a href="#" class="btn">My Projects</a>
+        <a href="#" class="btn" id="projectsBtn">Mis Lenguajes</a>
+
+        <div id="popup" class="popup">
+          <div class="popup-content">
+            <span class="close-btn" id="closePopup">&times;</span>
+            <div class="container">
+                <label for="lenguajes">Lenguajes</label>
+                <select name="lenguajes" id="lenguajes">
+                    <option value="php">PHP</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JS</option>
+                </select>
+            </div>
+            <div class="code-image">
+                <img id="codeImage" src="images/php.png" alt="Código">
+            </div>
+        </div>
+        </div>
       </div>
 
       <div class="home-img">
