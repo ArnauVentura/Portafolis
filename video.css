@@ -3,8 +3,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; 
-    width: 100%;
+    height: 100vh;
     background: linear-gradient(180.2deg, rgb(120, 85, 137) -6.9%, rgb(35, 9, 31) 76.7%);
     filter: blur(1.5);
 }
@@ -13,13 +12,15 @@ body {
     position: relative;
     max-width: 80%;
     width: 100%;
+    text-align: center; /* Alinea el contenido del contenedor al centro */
 }
 
 #interactiveVideo {
-    width: 100%;
-    height: auto;
+    max-width: 100%; /* Asegura que el video se ajuste al contenedor */
+    height: auto; /* Permite que la altura del video se ajuste automáticamente */
 }
-.overlay {
+
+.overlay2 {
     position: absolute;
     top: 0;
     left: 0;
@@ -39,4 +40,77 @@ body {
     cursor: pointer;
     font-size: 16px;
     display: none;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 8%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 32px;
+    color: #FFB5DA;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color: #FDBF60;
+    font-weight: 550;
+    text-decoration: none;
+    margin: 40px;
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #FDBF60;
+    transition: .3s;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+}
+
+.social-media{
+    width: 100px;
+    justify-content: space-between;
+    height: 40px;
+    background: transparent;
+}
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid transparent;
+    text-decoration: none;
+    transform: rotate(45deg);
+    transition: .5s;
+}
+
+.social-media a:hover{
+    border-color:#FDBF60;;
+}
+
+.social-media a i{
+    font-size: 24px;
+    color: #FDBF60;;
+    transform: rotate(-45deg);
 }
