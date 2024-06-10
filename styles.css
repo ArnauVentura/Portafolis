@@ -304,18 +304,28 @@ body {
 }
 
 .news-container {
-    max-height: 80vh;
-    overflow-y: auto;
-    width: 90%;
-    max-width: 800px;
-    padding: 10px;
+    max-height: calc(80vh - 20px); 
+    overflow-y: auto; 
+    width: 90%; 
+    max-width: calc(800px + 20px); 
+    padding: 10px 0; 
+    margin-right: -20px;
 }
 
 .card {
-    width: 100%;
-    max-width: 600px;
-    margin-bottom: 10px;
+    width: 100%; 
+    max-width: 600px; 
+    margin-bottom: 20px; 
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px; 
+    padding-right: 20px;
 }
+
+.card:last-child {
+    margin-bottom: 0; 
+    border-bottom: none; 
+}
+
 
 .card h2 {
     margin-top: 0;
