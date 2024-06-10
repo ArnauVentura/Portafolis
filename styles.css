@@ -198,9 +198,10 @@ body{
     background-color: gray;
     margin: 5% auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid #b37393;
     width: 80%;
     max-width: 1200px;
+    max-height: 1000px;
     max-inline-size: 1200px;
     position: relative;
   }

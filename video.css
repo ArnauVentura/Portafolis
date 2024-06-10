@@ -3,44 +3,41 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family:sans-serif;
     height: 100vh;
     background: linear-gradient(180.2deg, rgb(120, 85, 137) -6.9%, rgb(35, 9, 31) 76.7%);
     filter: blur(1.5);
 }
 
-.video-container {
-    position: relative;
-    max-width: 80%;
-    width: 100%;
-    text-align: center; /* Alinea el contenido del contenedor al centro */
-}
-
-#interactiveVideo {
-    max-width: 100%; /* Asegura que el video se ajuste al contenedor */
-    height: auto; /* Permite que la altura del video se ajuste automáticamente */
-}
-
-.overlay2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    pointer-events: none;
-}
-
-.interactive-button {
-    pointer-events: auto;
-    padding: 10px 20px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    display: none;
-}
+.text{
+    font-family: "Vollkorn", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  /* // <uniquifier>: Use a unique and descriptive class name
+  // <weight>: Use a value from 100 to 900 */
+  
+  .title {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+  }
+  
+  /* // <uniquifier>: Use a unique and descriptive class name
+  // <weight>: Use a value from 100 to 700 */
+  
+  .Secondary {
+    font-family: "M PLUS Code Latin", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
 
 .header{
     position: fixed;
@@ -114,3 +111,38 @@ body {
     color: #FDBF60;;
     transform: rotate(-45deg);
 }
+
+.video-container {
+    position: relative;
+    max-width: 80%;
+    width: 100%;
+    text-align: center; /* Alinea el contenido del contenedor al centro */
+}
+
+#interactiveVideo {
+    max-width: 100%; /* Asegura que el video se ajuste al contenedor */
+    height: auto; /* Permite que la altura del video se ajuste automáticamente */
+}
+
+.overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.interactive-button {
+    pointer-events: auto;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    display: none;
+}
+  
