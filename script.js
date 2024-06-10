@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 }, (24 - 20) * 1000);
                 break;
             case ' ':
-                video.currentTime = 7;
+                video.currentTime = 5;
                 video.pause();
                 break;
             default:
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     // Pausar el video en el segundo 7
     video.addEventListener('timeupdate', () => {
-        if (Math.floor(video.currentTime) === 7) {
+        if (Math.floor(video.currentTime) === 8) {
             video.pause();
         }
     });
