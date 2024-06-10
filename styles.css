@@ -1,54 +1,46 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:sans-serif;
-    overflow: hidden;
+    font-family: sans-serif;
 }
 
-body{
+body {
     min-height: 100vh;
     background: linear-gradient(180.2deg, rgb(120, 85, 137) -6.9%, rgb(35, 9, 31) 76.7%);
     filter: blur(1.5);
     background-size: cover;
     background-position: center;
     z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* // <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 400 to 900 */
-
-.text{
-  font-family: "Vollkorn", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+.text {
+    font-family: "Vollkorn", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
-/* // <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900 */
 
 .title {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
 }
-
-/* // <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 700 */
 
 .Secondary {
-  font-family: "M PLUS Code Latin", monospace;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+    font-family: "M PLUS Code Latin", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
 }
 
-.header{
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -61,14 +53,14 @@ body{
     z-index: 100;
 }
 
-.logo{
+.logo {
     font-size: 32px;
     color: #FFB5DA;
     text-decoration: none;
     font-weight: 700;
 }
 
-.navbar a{
+.navbar a {
     position: relative;
     font-size: 18px;
     color: #FDBF60;
@@ -77,7 +69,7 @@ body{
     margin: 40px;
 }
 
-.navbar a::before{
+.navbar a::before {
     content: '';
     position: absolute;
     top: 100%;
@@ -88,17 +80,18 @@ body{
     transition: .3s;
 }
 
-.navbar a:hover::before{
+.navbar a:hover::before {
     width: 100%;
 }
 
-.social-media{
+.social-media {
     width: 100px;
     justify-content: space-between;
     height: 40px;
     background: transparent;
 }
-.social-media a{
+
+.social-media a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -111,14 +104,48 @@ body{
     transition: .5s;
 }
 
-.social-media a:hover{
-    border-color:#FDBF60;;
+.social-media a:hover {
+    border-color: #FDBF60;
 }
 
-.social-media a i{
+.social-media a i {
     font-size: 24px;
-    color: #FDBF60;;
+    color: #FDBF60;
     transform: rotate(-45deg);
+}
+
+.video-container {
+    position: relative;
+    max-width: 80%;
+    width: 100%;
+    text-align: center;
+}
+
+#interactiveVideo {
+    max-width: 100%;
+    height: auto;
+}
+
+.overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.interactive-button {
+    pointer-events: auto;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    display: none;
 }
 
 .home {
@@ -131,32 +158,34 @@ body{
     overflow: hidden;
 }
 
-.home-content{
+.home-content {
     max-width: 925px;
 }
-.home-content h1{
+
+.home-content h1 {
     font-size: 90px;
     line-height: 1.2;
     color: #F6F6F6;
     margin-bottom: 10px;
 }
-.home-content h3{
+
+.home-content h3 {
     font-size: 60px;
     color: #f7a832;
     margin-bottom: 50px;
 }
 
-.home-content p{
+.home-content p {
     font-size: 25px;
     margin: 15px 0 30px;
     color: #F6F6F6;
 }
 
-.btn{
+.btn {
     display: inline-block;
     padding: 10px 28px;
     background: #b37393;
-    border:2px solid #b37393;
+    border: 2px solid #b37393;
     border-radius: 6px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     font-size: 20px;
@@ -167,18 +196,17 @@ body{
     transition: .3s;
 }
 
-.btn:hover{
+.btn:hover {
     background: transparent;
     color: #59D5E0;
     transition: .3s;
 }
 
-.home-img{
+.home-img {
     position: relative;
     display: inline-flex;
 }
 
-/* Popup container - hidden by default */
 .popup {
     display: none;
     position: fixed;
@@ -191,10 +219,9 @@ body{
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
     padding-top: 60px;
-  }
-  
-  /* Popup Content */
-  .popup-content {
+}
+
+.popup-content {
     background-color: gray;
     margin: 5% auto;
     padding: 20px;
@@ -204,28 +231,22 @@ body{
     max-height: 1000px;
     max-inline-size: 1200px;
     position: relative;
-  }
-  
-  /* Close Button */
-  .close-btn {
+}
+
+.close-btn {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
-  
-  .close-btn:hover,
-  .close-btn:focus {
+}
+
+.close-btn:hover,
+.close-btn:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
-  }
-  
-/* #mobil{
-    position: inherit;
-    width: 250px;
-    margin: 20px;
-} */
+}
+
 #mobil {
     margin: 20px;
     padding: 55px 2%;
@@ -236,15 +257,13 @@ body{
     float: left;
     box-shadow: inset 0px 0px 0px -4px rgba(255, 255, 255, 0.1), 1px 1px 6px rgba(0, 0, 0, 0.05), 1px 1px 8px rgba(0, 0, 0, 0.07);
 }
-#video{
+
+#video {
     position: inherit;
     border-radius: 30px;
     border: .5px solid black;
-    width: 20%;
     width: 300px;
-    height: 300px;
-    margin: 20px;
-
+    height: 300px
 }
 
 .container label {
@@ -273,41 +292,64 @@ body{
     height: auto;
     display: block;
     margin-top: 10px;
-  }
-  
-  #app {
+}
+
+#app {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra horizontalmente el contenido */
+    align-items: center;
     justify-content: center;
-    height: 100vh; /* Esto centra el contenido verticalmente */
-    overflow: auto; /* Agrega desplazamiento vertical solo para este contenedor */
+    height: 100vh;
+    overflow: auto;
 }
 
 .news-container {
-    max-height: 80vh; /* Altura máxima para la sección de noticias */
-    overflow-y: auto; /* Permite el desplazamiento vertical dentro de la sección */
-    width: 90%; /* Anchura del contenedor de noticias */
-    max-width: 800px; /* Ancho máximo del contenedor de noticias */
-    padding: 10px; /* Agrega un pequeño espacio alrededor del contenedor de noticias */
+    max-height: 80vh;
+    overflow-y: auto;
+    width: 90%;
+    max-width: 800px;
+    padding: 10px;
 }
 
 .card {
-    width: 100%; /* Ancho de las tarjetas */
-    max-width: 600px; /* Ancho máximo para dispositivos grandes */
-    margin-bottom: 10px; /* Espacio entre las tarjetas */
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 10px;
 }
-
-
 
 .card h2 {
     margin-top: 0;
 }
+
 .card p {
     margin-bottom: 5px;
     color: white;
 }
+
 .card a {
     text-decoration: none;
     color: #007bff;
+}
+
+.video-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.video-container {
+    position: relative;
+    max-width: 80%;
+    width: 100%;
+    text-align: center; /* Alinea el contenido del contenedor al centro */
+    margin-top: 50px; /* Agrega un margen superior para ajustar el video */
+}
+
+#interactiveVideo {
+    max-width: 100%; /* Asegura que el video se ajuste al contenedor */
+    height: auto; /* Permite que la altura del video se ajuste automáticamente */
+    border-radius: 10px; /* Agrega bordes redondeados */
+    border: 2px solid #f7a832; /* Agrega un borde blanco de 2px */
 }

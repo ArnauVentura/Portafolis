@@ -4,34 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diseño</title>
-    <link rel="stylesheet" href="video.css"/>
+    <link rel="stylesheet" href="styles.css"/>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=M+PLUS+Code+Latin:wght@100..700&display=swap" rel="stylesheet">
 </head>
-<body id="video">
+<body class="video-page"> <!-- Cambiado de id a class -->
+
+  <!-- Contenido de la página del video -->
   <header class="header">
-    <a href="index.html" class="logo">AVC</a>
+      <a href="index.html" class="logo">AVC</a>
 
-    <nav class="navbar">
-      <a href="news.html">NEWS-API</a>
-    </nav>
+      <nav class="navbar">
+          <a href="news.html">NEWS-API</a>
+      </nav>
 
-    <div class="social-media">
-      <a href="http://www.linkedin.com/in/arnau-ventura-c%C3%ADvico-154119277"><i class="bx bxl-linkedin-square"></i></a>
-      <a href="https://github.com/ArnauVentura"><i class="bx bxl-github"></i></a>
-    </div>
+      <div class="social-media">
+          <a href="http://www.linkedin.com/in/arnau-ventura-c%C3%ADvico-154119277"><i class="bx bxl-linkedin-square"></i></a>
+          <a href="https://github.com/ArnauVentura"><i class="bx bxl-github"></i></a>
+      </div>
   </header>
-    <div class="video-container">
-        <video id="interactiveVideo" width="640" height="360" controls>
-            <source src="./Source/Diseño_main.mp4" type="video/mp4">
-        </video>
-        <div id="overlay2" class="overlay2">
-            <button id="interactiveButton" class="interactive-button">START</button>
-        </div>
-    </div>
+
+  <div class="video-page"> <!-- Eliminado " extra -->
+      <video id="interactiveVideo" width="640" height="360" controls>
+          <source src="./Source/Diseño_main.mp4" type="video/mp4">
+      </video>
+      <div id="overlay2" class="overlay2">
+          <button id="interactiveButton" class="interactive-button">START</button>
+      </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
